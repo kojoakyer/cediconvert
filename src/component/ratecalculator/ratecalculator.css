@@ -1,0 +1,30 @@
+.rate{
+    height: 100%;
+}
+
+.rate-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ededed;
+}
+
+.rate-wrapper-form{
+    width: 650px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 11px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 39px 20px;
+}
+
+.form-container{
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-right: 20px;
+}

@@ -1,0 +1,39 @@
+.track{
+    height: 100%;
+}
+
+.track-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-wrapper-form{
+    width: 450px;
+    height: 100%;
+    border: 1px solid #ededed;
+    box-sizing: border-box;
+    border-radius: 11px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 39px 20px;
+}
+
+.form-container{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-container button{
+    width: 100%;
+    height: 62px;
+    background-color: #498f86;
+    border-radius: 8px;
+    border-color: #498f86;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}

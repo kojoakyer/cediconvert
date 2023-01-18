@@ -1,0 +1,41 @@
+.banner{
+    width: 100%;
+    
+    /* margin:50px 50px 50px 50px; */
+}
+
+.banner-wrapper-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: yellow;
+    margin: 20px 50px;
+    padding: 20px 50px;
+   
+}
+
+.banner-wrapper-top h3{
+    font-size: 45px;
+    color: #262626;
+    width: 60%;
+}
+
+.banner-wrapper-bottom{
+    display: flex;
+    margin-left: 50px;
+}
+
+.banner-wrapper-bottom-right h3{
+    color: #498f86;
+    font-size: 36px;
+}
+
+.banner-wrapper-bottom-right h4{
+    font-size: 28px;
+}
+
+.banner-wrapper-bottom-right button{
+    padding: 15px 30px;
+    background-color: rgb(14, 62, 59);
+    color: #fff;
+}

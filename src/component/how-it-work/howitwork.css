@@ -1,0 +1,29 @@
+
+.howitwork{
+    height: 100%;
+    background-image: url(https://res.cloudinary.com/dypj8zqbm/image/upload/v1622039729/Group_9685_1_1_leqkto.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.howitwork-wrapper-title{
+    padding: 50px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.howitwork-wrapper-title h2{
+    font-size: 48px;
+    font-family: GraphikBold;
+    color: #000;
+    font-weight: 700;
+}
+
+.howitwork-wrapper-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

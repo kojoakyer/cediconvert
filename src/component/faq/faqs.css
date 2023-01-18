@@ -1,0 +1,10 @@
+.faqs{
+    background: #e2f5f5;
+    min-height: 740px;
+    height: auto;
+}
+
+.faqs-wrapper{
+    display: flex;
+
+}
