@@ -1,16 +1,40 @@
 import React from 'react'
 import './faqs.css'
 
-const Faqs = () => {
+const Faqs = ({tabs={}}) => {
+  const [activeTabIndex,setActiveTabIndex]= React.useState(0)
+
+  const activateTab = (index)=>{
+      setActiveTabIndex(index)
+  }
   return (
     <div className='faqs'>
-      <div className="faqs-wrapper">
-        <div className="faqs-wrapper-left">
-
-        </div>
-        <div className="faqs-wrapper-right">
-
-        </div>
+      <div className="">
+          {Object.keys(tabs).length === 0 ?(
+            <h4>No tab</h4>
+          ):(
+            <div className="faqs-wrapper">
+              <div className="faqs-wrapper-left">
+                {tabs.map((tab,index)=>{
+                  return(
+                    <div key={index}
+                      className={index === activeTabIndex ? 'active-questions' : 'questions'}
+                      onClick={()=> activateTab(index)}
+                      >
+                        {tab.name}
+                      <img src="https://res.cloudinary.com/dypj8zqbm/image/upload/v1622540305/Vector_2_api15o.svg" alt="dot-img"/>
+                    </div>
+                  )
+                })}
+              </div>
+               <div className="faqs-wrapper-right">
+                  <div className="">
+                      {tabs[activeTabIndex].content}
+                  </div>
+               </div>
+             </div>
+          )}
+       
       </div>
     </div>
   )

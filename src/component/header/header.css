@@ -1,7 +1,7 @@
 
 
 h2{
-    font-size: 48px;
+    font-size: 38px;
     font-family: GraphikBold;
     color: #fff;
     line-height: 62px;
@@ -37,15 +37,15 @@ p{
 }
 .header-wrapper-left .title h2{
     width: 80%;
-    font-size: 50px;
+    font-size: 40px;
 }
 .header-wrapper-right{
     flex: 0.5;
 }
 
 .header-wrapper-left_span{
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 28px;
+    font-weight: 500;
     color: hsla(0,0%,100%,.54);
     margin-top: -50px;
 }
@@ -76,12 +76,13 @@ p{
 }
 
 .header-wrapper-left_bottom{
-    margin-top: 100px;
+    margin-top: 80px;
     display: flex;
+    align-items: center;
 }
 
 .header-wrapper-left_center{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .header-wrapper-left_bottom_left{
@@ -91,11 +92,13 @@ p{
 }
 
 .header-wrapper-right-img{
-
+    margin-top: 50px;
+    height: 800px;
 }
 
 .header-img{
     
+    height: 100%;
     /* -webkit-animation: moving 4s ease-in-out infinite; */
     /* animation: moving 4s ease-in-out infinite; */
     animation-duration: 4s;
@@ -104,8 +107,11 @@ p{
 
 .header-wrapper-right-img img{
     width: 625px;
+    height: 70%;
     vertical-align: middle;
     border-style: none;
+    border-radius: 50px;
+    background-size: cover;
 }
 
 

@@ -27,3 +27,12 @@
     align-items: center;
 }
 
+.how-title{
+    width: 30%;
+}
+
+.how-title h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+

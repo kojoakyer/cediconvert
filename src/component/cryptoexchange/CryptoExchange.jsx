@@ -7,12 +7,23 @@ const CryptoExchange = () => {
         <div className="crypto-wrapper">
             <div className="crypto-wrapper-form">
             <div className="form-container">
-                <label>Which coin do you wish to sell?</label>
-                <select name="" id=""></select>
+                <label>Provide GHS Payment Details</label>
+                <select name="" id="">
+                    <option value="">Mobile Money</option>
+                    <option value="">Bank</option>
+                    <option value="">Cash (Coming Soon)</option>
+                </select>
             </div>
             <div className="form-container">
-                <label>Coin Network</label>
-                <select name="" id=""></select>
+                <label>Mobile Money</label>
+                <select name="" id="">
+                    <option value=""> MTN Mobile Money</option>
+                    <option value=""> Vodafone Cash</option>
+                    <option value=""> AirtelTigo Money</option>
+                </select>
+                <input placeholder='Please provide Mobile Money Number' type="text" />
+                <input placeholder='Please provide Reference ' type="text" />
+                <input placeholder='Provide Email/WhatsApp for Transaction Receipt (Optional)' type="text" />
             </div>
             <div className="form-container">
                 <label>Bank Account</label>
