@@ -58,8 +58,8 @@ export const MobileMoney =()=>(
 
 export const AnswerOne = ()=>(
   <div className="home-question">
-    <h4>How Safe is Cediconvert?',</h4>
-    <p>Cediconvert is very safe.</p>
+    <h4>How Safe is YMXconvert?</h4>
+    <p>YMXConvert is very safe.</p>
     <p>Technical Proof
         Our exchange website comes with an SSL Certificate and all transactions are secured using cryptographic state-of-the-art security processes.
         Social Proof
@@ -86,7 +86,7 @@ const Home = () => {
         <Banner/>
         <Faqs
         tabs={[
-          {name:'How Safe is Cediconvert?', content:<AnswerOne/>},
+          {name:'How Safe is YMXConvert?', content:<AnswerOne/>},
           {name:'What is the Minimum i can Send?', content:<AnswerTwo/>},
           {name:'How Fast will the GHS be Received?', content:<AnswerThree/>},
           {name:'Will Taxes and Transaction Fees affect the GHS to be Received?', content:<AnswerFour/>},

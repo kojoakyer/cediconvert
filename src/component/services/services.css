@@ -1,6 +1,7 @@
 .services{
-    height: 100vh;
-    padding-bottom: 100px;
+    height: 100%;
+    padding-bottom: 20px;
+    margin-bottom: -100px;
 }
 
 .services-title{
@@ -11,7 +12,7 @@
 
 .services-title h2{
     font-size: 48px;
-    font-family: GraphikBold;
+    font-family: 'Poppins', sans-serif;
     color: #000;
     font-weight: 700;
     margin: 50px 0px;
@@ -43,6 +44,7 @@
     color: #fff;
     padding: 15px 30px;
     border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .services-wrapper-content{
@@ -58,4 +60,12 @@
     position: relative;
     top: -38.5px;
     margin: 0 auto 50px;
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+
+
 }

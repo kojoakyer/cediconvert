@@ -8,9 +8,9 @@ const Services = ({tabs={}}) => {
     }
   return (
     <div>
-        <div className="services">
+        <div className="services" id='service'>
             <div className="">
-                <div className="services-title"><h2>CediConvert Services</h2></div>
+                <div className="services-title"><h2>YMXConvert Services</h2></div>
                 <div className="services-wrapper">
                     {Object.keys(tabs).length === 0 ? (
                     <div className="">No Tabs</div>

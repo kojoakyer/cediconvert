@@ -1,6 +1,9 @@
 import React, { useState } from 'react'
 import './navbar.css'
-import {Link} from 'react-router-dom'
+// import {Link} from 'react-router-dom'
+
+import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -24,34 +27,52 @@ function Navbar() {
     <>
     <div className="navbar">
         <div className="nav-left">
-            <div className="logo-container "><h1 className='navbar-logo'>Cediconvert</h1> </div>
+            <div className="logo-container ">
+                <Link  style={{textDecoration:'none', color:'white'}} to='/'>
+                <h1 className='navbar-logo'>YMXConvert</h1> 
+                </Link>
+            </div>
         </div>
         <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times':'fas fa-bars'}/>
         </div>
         <div className="nav-center">
             <ul className={click ? 'nav-menu active':'nav-menu'}>
+           
                 <li className="nav-item" onClick={closeMobileMenu}>
+                <HashLink style={{textDecoration:'none', color:'white'}} smooth to='/#about'>
                     About us
+                    </HashLink>
+                
                 </li>
+            
+    
                 <li className="nav-item" onClick={closeMobileMenu}>
+                <HashLink  style={{textDecoration:'none', color:'white'}} smooth to='/#howitwork'>
                     How it works
+                    </HashLink>
                 </li>
+        
+         
                 <li className="nav-item" onClick={closeMobileMenu}>
-                    Price Chart
+                <HashLink  style={{textDecoration:'none', color:'white'}} smooth to='/#service'>
+                    Price chart
+                    </HashLink>
                 </li>
+       
                 <li className="nav-item" onClick={closeMobileMenu}>
-                    Rate Calculator
+                <HashLink  style={{textDecoration:'none', color:'white'}} smooth to='/#service'>
+                    Rate calculator
+                    </HashLink>
                 </li>
-                <li className="nav-item l" onClick={closeMobileMenu}>
+            
+            
+                <li className="nav-item" onClick={closeMobileMenu}>
+                <HashLink  style={{textDecoration:'none', color:'white'}} smooth to='/#faq'>
                     Faq
+                    </HashLink>
                 </li>
-                <li className="nav-item mobile" onClick={closeMobileMenu}>
-                    Logout
-                </li>
-                <li className='nav-item mobile' onClick={closeMobileMenu}>Login</li>
-                <li className='nav-item mobile' onClick={closeMobileMenu}>Register</li>
-
+            
             </ul>
         </div>
         <div className="nav-right">

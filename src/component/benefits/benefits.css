@@ -4,9 +4,9 @@
     -webkit-clip-path: polygon(0 12%,100% 0,100% 100%,0 100%);
     clip-path: polygon(0 12%,100% 0,100% 100%,0 100%);
     background: #f8f8f8;
-    height: 100vh;
-    margin-top: 100px;
-    padding-top: 100px;
+    height: 100%;
+    margin-top: 80px;
+    padding-top: 20px;
  
 }
 
@@ -15,9 +15,9 @@
 }
 
 .benefits-wrapper-item{
-    width: 520px;
+    width: 620px;
     height: 204px;
-    margin: 100px 0px 100px 80px;
+    margin: 100px 0px 150px 80px;
 }
 
 .benefits-wrapper-item p{
@@ -35,7 +35,7 @@
 
 .benefits-wrapper-list{
     display: flex;
-    margin: 20px 80px;
+    margin: 50px 80px;
     color: black;
 }
 

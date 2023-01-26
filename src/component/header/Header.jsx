@@ -1,3 +1,4 @@
+import { motion} from 'framer-motion'
 import React from 'react'
 import './header.css'
 
@@ -27,19 +28,24 @@ const Header = () => {
                         <p style={{marginLeft:'10px'}}>USD</p>
                     </div>
                 </div>
-                <div className="header-wrapper-left_bottom">
+                <div className="header-wrapper-left_bot">
                     <div className=" header-wrapper-left_bottom_left">Comming soon : </div>
                     <div className="" style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
-                        <p style={{marginLeft:'10px'}}>BUSD</p>
-                        <p style={{marginLeft:'10px'}}>USDC</p>
-                        <p style={{marginLeft:'10px'}}>USDT Logos</p>
-                        <p style={{marginLeft:'10px'}}>USD</p>
+                        <p style={{marginLeft:'10px'}}>BTC</p>
+                        <p style={{marginLeft:'10px'}}>ETH</p>
                     </div>
                 </div>
             </div>
             <div className="header-wrapper-right">
                 <div className="header-wrapper-right-img">
-                    <img className='header-img' src="assets/header-img.jpg" alt="" />
+                    <motion.img animate={{ x: [50, 150, 50], opacity: 1, scale: 1 }}
+                    transition={{
+                    duration: 5,
+                    delay: 0.3,
+                    ease: [0.5, 0.71, 1, 1.5],
+                }}
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileHover={{ scale: 1.2 }} className='header-img' src="assets/header-img.jpg" alt="" />
                 </div>
             </div>
         </div>

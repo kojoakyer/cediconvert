@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './ratecalculator.css'
 import axios from 'axios'
 
+
 const RateCalculator = () => {
 
     const [initialState, setState] = useState({
@@ -15,33 +16,28 @@ const RateCalculator = () => {
 
     const {currencies,base,amount,convertTo,result,date} = initialState
 
+    var nowdate = new Date();
+    var timestamp = nowdate.getTime(); 
+
+    const query_string = `timestamp=${timestamp}`;
+    const apiSecret = '69d8IPfJ9Dq3FaOv5NAfAAeAAHPV0xK7';
+
+        const signature = 'crypto'
+        .createHmac('sha256', apiSecret)
+        .update(query_string)
+        .digest('hex')
+
     useEffect(()=>{
         if(amount === isNaN){
             return;
         }else{
             const getConcurrencyCover = async () =>{
-                // const response = await axios.get(`https://api.apilayer.com/exchangerates_data/latest?symbols={symbols}&base=${base}`,{
-                //     headers: ({'apikey':'69d8IPfJ9Dq3FaOv5NAfAAeAAHPV0xK7'})
-                // });
-              
-                // console.log('responses =>', response);
-                // const responses = response.data.date
-                // const result = (response.data.rates[convertTo] * amount).toFixed(3)
+                 const response = await axios.get(`https://api.binance.com/api/v3/order?symbol=${base}&recvWindow=5000&timestamp=${timestamp}&signature=${signature}`)
+                //  const result = (response.data.rates[convertTo] * amount).toFixed(3)
 
-                var myHeaders = new Headers();
-myHeaders.append("apikey", "69d8IPfJ9Dq3FaOv5NAfAAeAAHPV0xK7");
+                console.log(response);
 
-var requestOptions = {
-  method: 'GET',
-  redirect: 'follow',
-  headers: myHeaders
-};
-
-fetch(`https://api.apilayer.com/exchangerates_data/latest?symbols={symbols}&base=${base}`, requestOptions)
-  .then(response => response.text())
-  .then(result => console.log(result))
-  .catch(error => console.log('error', error));
-            };
+            }
 
             getConcurrencyCover()
         }

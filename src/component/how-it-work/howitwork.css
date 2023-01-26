@@ -16,7 +16,7 @@
 
 .howitwork-wrapper-title h2{
     font-size: 48px;
-    font-family: GraphikBold;
+    font-family: 'Poppins', sans-serif;
     color: #000;
     font-weight: 700;
 }
@@ -34,5 +34,6 @@
 .how-title h3{
     font-size: 30px;
     font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 

@@ -8,7 +8,7 @@ const Faqs = ({tabs={}}) => {
       setActiveTabIndex(index)
   }
   return (
-    <div className='faqs'>
+    <div className='faqs' id='faq'>
       <div className="">
           {Object.keys(tabs).length === 0 ?(
             <h4>No tab</h4>
