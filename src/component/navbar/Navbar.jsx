@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
 
-    const user= false;
+    
 
     const [click, setClick] = useState(false)
 

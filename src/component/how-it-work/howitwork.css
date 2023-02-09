@@ -37,3 +37,33 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+@media screen and (max-width: 960px) {
+
+    .howitwork-wrapper-item{
+        flex-direction: column;
+    }
+
+    .howitwork-wrapper-title{
+        padding: 20px 0px;
+        width: 100%;
+    }
+    
+    .howitwork-wrapper-title h2{
+        font-size: 28px;
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+        font-weight: 600;
+    }
+
+    .how-title{
+        width: 80%;
+    }
+    
+    .how-title h3{
+        font-size: 18px;
+        font-weight: 400;
+       
+    }
+
+}

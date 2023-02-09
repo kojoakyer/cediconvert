@@ -4,6 +4,7 @@ import axios from 'axios'
 
 
 const RateCalculator = () => {
+    const api_key = 112
 
     const [initialState, setState] = useState({
         currencies:['BTC','ETH','USDT_TRC20','BNB_BSC'],
@@ -20,7 +21,7 @@ const RateCalculator = () => {
     var timestamp = nowdate.getTime(); 
 
     const query_string = `timestamp=${timestamp}`;
-    const apiSecret = '69d8IPfJ9Dq3FaOv5NAfAAeAAHPV0xK7';
+    const apiSecret = api_key;
 
         const signature = 'crypto'
         .createHmac('sha256', apiSecret)

@@ -22,17 +22,17 @@ const Header = () => {
                 <div className="header-wrapper-left_bottom">
                     <div className=" header-wrapper-left_bottom_left">Supported : </div>
                     <div className="" style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
-                        <p style={{marginLeft:'10px'}}>BUSD</p>
-                        <p style={{marginLeft:'10px'}}>USDC</p>
-                        <p style={{marginLeft:'10px'}}>USDT Logos</p>
-                        <p style={{marginLeft:'10px'}}>USD</p>
+                        <img style={{width:'30px', height:'30px',marginLeft:'20px'}} src="assets/busd.svg" alt="" />
+                        <img style={{width:'30px', height:'30px',marginLeft:'20px'}} src="assets/usdt.svg" alt="" />
+                        <img style={{width:'40px', height:'40px',marginLeft:'20px'}} src="assets/usdc.svg" alt="" />
+                        
                     </div>
                 </div>
                 <div className="header-wrapper-left_bot">
                     <div className=" header-wrapper-left_bottom_left">Comming soon : </div>
                     <div className="" style={{display:'flex', justifyContent:'center',alignItems:'center'}}>
-                        <p style={{marginLeft:'10px'}}>BTC</p>
-                        <p style={{marginLeft:'10px'}}>ETH</p>
+                    <img style={{width:'30px', height:'30px',marginLeft:'20px'}} src="assets/btc.png" alt="" />
+                    <img style={{width:'30px', height:'30px',marginLeft:'20px'}} src="assets/eth.png" alt="" />
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@ const Header = () => {
                     ease: [0.5, 0.71, 1, 1.5],
                 }}
                 initial={{ opacity: 0, scale: 0.5 }}
-                whileHover={{ scale: 1.2 }} className='header-img' src="assets/header-img.jpg" alt="" />
+                whileHover={{ scale: 1.2 }} className='header-img' src="assets/header-img.png" alt="" />
                 </div>
             </div>
         </div>

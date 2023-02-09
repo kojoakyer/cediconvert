@@ -1,6 +1,6 @@
 .footer{
     height: 400px;
-    background-color: rgb(14, 62, 59);
+    background-color: #0E5E6F;
    
 }
 
@@ -54,4 +54,16 @@
     font-size: 17px;
     margin-bottom: 15px;
     font-weight: 400;
+}
+
+
+@media screen and (max-width: 960px) {
+    .footer{
+        height: 100%;
+        background-color: #0E5E6F;
+       
+    }
+    .footer-wrapper{
+        flex-direction: column;
+    }
 }

@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="banner-wrapper-top">
                 
                     <h3>
-                    Enjoy VIP Personalised Rate for BTC of $20,000 and above
+                    Enjoy VIP Personalised Rate for Crypto of $10,000 and above
                     </h3>
             
                 <button style={{backgroundColor:'white',color:'black',padding:'10px 30px',fontSize:'1rem',border:'none'}}>Sell at VIP Rate</button>

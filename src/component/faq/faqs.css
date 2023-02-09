@@ -4,6 +4,14 @@
     height: auto;
 }
 
+.web{
+
+}
+
+.mobile{
+    display: none;
+}
+
 .faqs-wrapper{
     display: flex;
     justify-content: center;
@@ -54,4 +62,74 @@
     font-size: 16px;
     font-weight: 600;
     color: #000;
+}
+
+@media screen and (max-width: 960px) {
+
+    .faqs{
+        background: #e2f5f5;
+        min-height: 100%;
+        height: auto;
+    }
+
+    .web{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+    }
+    
+    .faqs-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+    
+    }
+    
+    .faqs-wrapper-left{
+        height: 551px;
+        width: 400px;
+        padding: 10px 50px;
+    }
+    
+    .faqs-wrapper-right{
+        background-color: #fff;
+        height: 461px;
+        width: 540px;
+        box-shadow: 0 10px 23px rgb(0 0 0 / 6%);
+        border-radius: 11px;
+      
+    }
+    
+    .faqs-wrapper-left .questions{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        padding: 20px 5px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+    }
+    
+    .faqs-wrapper-left .active-questions{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(0,0,0,.15);
+        padding: 20px 0px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        background-color: rgb(247, 244, 244);
+    }
+    
+    .faqs-wrapper-left .questions h5{
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+    }
 }
